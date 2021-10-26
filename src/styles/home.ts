@@ -14,7 +14,6 @@ export const Container = styled.div<ContainerProps>`
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: red;
   background-image: ${(props) => css`url(${props.url}.jpg)`};
   background-repeat: no-repeat;
   background-size: cover;

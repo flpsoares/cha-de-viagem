@@ -1,15 +1,24 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 interface DoarProps {
   opacity: number
 }
 
-export const Container = styled.div`
+interface ContainerProps {
+  url: string
+}
+
+export const Container = styled.div<ContainerProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: red;
+  background-image: ${(props) => css`url(${props.url}.jpg)`};
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
 `
 
 export const Image = styled.img`

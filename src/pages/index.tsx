@@ -28,8 +28,7 @@ export default function Home() {
   const [image, setImage] = useState('triste')
 
   return (
-    <Container>
-      <Image src={`/${image}.jpg`} />
+    <Container url={image}>
       <Title>
         Estou arrecadando fundos para fazer uma viagem importantíssima, não existe
         valor mínimo de doação, porém se você puder, doe o que tocar no seu coração,

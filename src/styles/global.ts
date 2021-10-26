@@ -12,5 +12,12 @@ export default createGlobalStyle`
     background: 0;
     border: 0;
     cursor: pointer;
+    color: white;
+  }
+
+  html {
+    background: #191622;
+    color: white;
+    font-family: 'Comic Neue', cursive;
   }
 `

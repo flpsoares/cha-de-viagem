@@ -14,18 +14,14 @@ export const Container = styled.div<ContainerProps>`
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: ${(props) => css`url(${props.url}.jpg)`};
+  background-image: ${(props) => css`url(${props.url}.jpeg)`};
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-`
+  background-size: contain;
+  background-position: center;
 
-export const Image = styled.img`
-  position: absolute;
-
-  width: 800px;
-  height: 100vh;
-  object-fit: cover;
+  @media (max-width: 540px) {
+    background-size: cover;
+  }
 `
 
 export const Title = styled.span`
@@ -66,6 +62,6 @@ export const Doar = styled.h1<DoarProps>`
   z-index: 2;
   transition: opacity 1s;
   font-size: 28px;
-  color: #191622;
+  color: white;
   opacity: ${(props) => props.opacity};
 `

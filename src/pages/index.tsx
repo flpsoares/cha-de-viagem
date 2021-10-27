@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, Container, Title, Image, Doar, Link } from '../styles/home'
+import { Button, Container, Title, Doar, Link } from '../styles/home'
 
 export default function Home() {
   const doar = () => {
